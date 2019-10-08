@@ -1,0 +1,11 @@
+consts =      {"ntrain": 150000,
+               "nfiles_original": 269648,
+               "nlabels": 81,
+               "ntrain_resplit": 110000,
+               "nvalid_resplit": 40000,
+               "ntest": 40253,
+               "ntags": 422364,
+               "nfiles": 244762,
+               "nsets": 165039,
+               "npools": 95358,
+               "fc7_width": 4096}

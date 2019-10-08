@@ -1,0 +1,15 @@
+{"arch": "ltn",
+ "test_batch_size": 1024,
+ "train_batch_size": 64,
+ "test_prefetch": 2048,
+ "train_prefetch": 320,
+ "learning_rate": 0.0001,
+ "n": 10,
+ "m": 3,
+ "M": 6,
+ "num_epochs": 10,
+ "dropout_rate": 0.5,
+ "decay_rate": 0.9,
+ "h": 500,
+ "l2_reg": 0.00003
+}
