@@ -125,13 +125,6 @@ class ltn(object):
                 [v for v in tf.trainable_variables() if v.name.split('/')[0] in (["OUT", "rnn", "OUTRNN/lstm_cell"])]
             )
 
-    def _id(self):
-        st = "Love Thy Neighbors " + config["arch"]
-        return st
-
-    def _reset_weights(self, sess):
-        pass
-
     def train_hook(self, sess, handle):
         return sess.run([self.train_op, self.loss_op],
                         feed_dict={self.handle: handle,

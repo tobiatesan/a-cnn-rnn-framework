@@ -90,13 +90,6 @@ class lbraid(object):
             optimizer = tf.contrib.estimator.clip_gradients_by_norm(optimizer, clip_norm=5.0)
             self.train_op = optimizer.apply_gradients(grads_and_vars=gradients)
 
-
-    def _id(self):
-        st = "Love Zip Neighbors"
-
-    def _reset_weights(self, sess):
-        pass
-
     def train_hook(self, sess, handle):
         return sess.run([self.train_op, self.loss_op],
                         feed_dict={self.handle: handle,
