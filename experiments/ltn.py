@@ -126,7 +126,7 @@ def train_and_test(sess, trainset, validationset, testset, minimatrix, embedding
             from models.ltwin import ltwin as network
         else:
             if(config["arch"] == "lzip"):
-                from models.ltwin import ltwin as network
+                from models.ltwin import lzip as network
             else:
                 print("Unrecognized arch, check your configuration file")
                 assert(False)
